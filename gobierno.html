@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Una pobre realidad</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+	    body {
+		    font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f0f0f0;
+		}
+		
+	    header {
+		    background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+		nav {
+		    background-color: #444;
+			color: #fff;
+			padding: 10px;
+			text-align: left;
+		}
+		article {
+		    background-color: #fff;
+			padding: 20px;
+			margin: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		section {
+		    background-color: #f9f9f9;
+			padding: 20px;
+			margin: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		aside {
+		    background-color: #444;
+			color: #fff;
+			padding: 10px;
+			text-align: left;
+		}
+		footer {
+		    background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+	<script>
+		function guardarDatos() { 
+			var nombre = document.getElementById("nombre").value;
+			var apellido = document.getElementById("apellido").value; 
+			var ciudad = document.getElementById("ciudad").value;
+			var país = document.getElementById("país").value; 
+
+		}
+
+		function buscarGoogle() {
+			var query = document.getElementById("busqueda").value;
+			var url = "https://www.google.com/search?q=" + encodeURIComponent
+			window.location.href = url; 
+
+		}
+	</script>
+</head>
+<body>
+    <header>
+	     <h1>Nuestro gobierno</h1>
+   </header>
+<section> 
+	<p> Actualmente, el gobierno ha tratado de implementar diversas medidas para abordar los desafíos educativos. Sin embargo, considero que el gobierno debería ejecutar lo siguiente para solucionar esta problemática: </p>
+<article> 
+	<ol> 
+		<li> Programas de Asistencia Financiera </li>
+		<p> Algunos gobiernos han establecido programas de asistencia financiera dirigidos a familias de bajos ingresos para ayudarles a cubrir los costos asociados con la educación, como uniformes, libros y transporte escolar.Algunos gobiernos han establecido programas de asistencia financiera dirigidos a familias de bajos ingresos para ayudarles a cubrir los costos asociados con la educación, como uniformes, libros y transporte escolar. </p>
+		<li> Inversiones en Infraestructura Escolar </li>
+		<p> Se han llevado a cabo iniciativas para mejorar la infraestructura de las instituciones educativas estatales, especialmente en áreas rurales o económicamente desfavorecidas. Esto podría incluir la construcción de nuevas escuelas, la renovación de instalaciones existentes y la mejora de los servicios básicos. </p>
+		<li> Programas de Desarrollo Profesional para Docentes </li>
+		<p> El fortalecimiento de la calidad educativa a menudo implica la capacitación y desarrollo profesional de los docentes. Los gobiernos pueden implementar programas para mejorar las habilidades pedagógicas y el conocimiento del personal docente. </p>
+		<li> Participación Comunitaria </li> 
+		<p> Fomentar la participación activa de la comunidad en la toma de decisiones educativas puede ser una estrategia efectiva. Esto implica involucrar a padres, maestros y miembros de la comunidad en la planificación y evaluación de programas educativos. </p>
+	</ol>
+</article>
+	<p> Es importante tener en cuenta que la efectividad de estas medidas puede variar y está sujeta a factores como la implementación adecuada, la asignación de recursos y la supervisión continua. </p>
+</section>
+<section> 
+	<img src="Imágenes/img1.jpeg"/>
+</section>
+</body>
+</html>

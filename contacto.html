@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Una pobre realidad</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+	    body {
+		    font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f0f0f0;
+		}
+		
+	    header {
+		    background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+		nav {
+		    background-color: #444;
+			color: #fff;
+			padding: 10px;
+			text-align: left;
+		}
+		article {
+		    background-color: #fff;
+			padding: 20px;
+			margin: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		section {
+		    background-color: #f9f9f9;
+			padding: 20px;
+			margin: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		aside {
+		    background-color: #444;
+			color: #fff;
+			padding: 10px;
+			text-align: left;
+		}
+		footer {
+		    background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+	<script>
+		function guardarDatos() { 
+			var nombre = document.getElementById("nombre").value;
+			var apellido = document.getElementById("apellido").value; 
+			var ciudad = document.getElementById("ciudad").value;
+			var país = document.getElementById("país").value; 
+
+		}
+
+		function buscarGoogle() {
+			var query = document.getElementById("busqueda").value;
+			var url = "https://www.google.com/search?q=" + encodeURIComponent
+			window.location.href = url; 
+
+		}
+	</script>
+</head>
+<body>
+    <header>
+	     <h1>Contactalos</h1>
+   </header>
+
+
+<section>
+	<p> La pobreza en las instituciones educativas estatales en el Perú es un desafío multifacético que requiere un enfoque integral. Al abordar las barreras económicas, mejorar la calidad de la enseñanza y garantizar oportunidades equitativas de desarrollo, podemos allanar el camino para un sistema educativo más inclusivo y equitativo. Solo a través de un compromiso continuo y acciones concertadas se podrán superar los obstáculos que limitan el potencial de los estudiantes y obstaculizan el progreso educativo en el país. </p>
+	<article> 
+		<p> Los ciudadanos pueden desempeñar un papel fundamental en abordar la problemática de la pobreza en las instituciones educativas estatales en el Perú. Aquí hay algunas maneras en que los ciudadanos pueden contribuir: </p>
+		<ul> 
+			<li> Ofrecer tiempo y habilidades como voluntario en escuelas o programas educativos puede marcar una gran diferencia. Puedes ayudar en actividades extracurriculares, ofrecer tutorías o participar en iniciativas que mejoren la infraestructura escolar. </li>
+			<li> Contribuir con donaciones de libros, material escolar, uniformes y otros recursos educativos puede ser de gran ayuda. También puedes considerar donar a organizaciones sin fines de lucro que trabajan para mejorar la educación en comunidades desfavorecidas. </li>
+		</ul>
+	</article>
+	<img src="Imágenes/img3.png"/>
+</section>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Una pobre realidad</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+	    body {
+		    font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f0f0f0;
+		}
+		
+	    header {
+		    background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+		nav {
+		    background-color: #444;
+			color: #fff;
+			padding: 10px;
+			text-align: left;
+		}
+		article {
+		    background-color: #fff;
+			padding: 20px;
+			margin: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		section {
+		    background-color: #f9f9f9;
+			padding: 20px;
+			margin: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		aside {
+		    background-color: #444;
+			color: #fff;
+			padding: 10px;
+			text-align: left;
+		}
+		footer {
+		    background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+	<script>
+		function guardarDatos() { 
+			var nombre = document.getElementById("nombre").value;
+			var apellido = document.getElementById("apellido").value; 
+			var ciudad = document.getElementById("ciudad").value;
+			var país = document.getElementById("país").value; 
+
+		}
+
+		function buscarGoogle() {
+			var query = document.getElementById("busqueda").value;
+			var url = "https://www.google.com/search?q=" + encodeURIComponent
+			window.location.href = url; 
+
+		}
+	</script>
+</head>
+<body>
+    <header>
+	     <h1>Una pobre realidad</h1>
+    </header/>
+	<nav>
+	    <ul>
+		    <li><a href="contexto.html">Contexto</a></li>
+		    <li><a href="gobierno.html">Nuestro gobierno</a></li>
+		    <li><a href="contacto.html">Contactalos</a></li>
+        </ul>
+	</nav>
+	<article>
+	     <h2>¿Cuál es el proposito de esta página?</h2>
+		 <p>EL proposito de esta página es exponer y denunciar la realidad que muchas veces se presenta dentro de instituciones educativas gratuitas peruanas, tanto dentro de nivel inicial como primaria y secundaria, asi como posibles soluciones o contribuciones que podemos realizar para resolver esta problemática. </p>
+    </article>
+	<section>
+	 <div class="container">
+        <div class="form-container">
+            <h2>Guardar datos</h2>
+            <form onsubmit="guardarDatos(); return false;"> 
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+                <label for="pais">País:</label>
+                <select id="pais" name="pais" required>
+                    <option value="Selecciona">Selecciona un país</option>
+                    <option value="Perú">Perú</option>
+                    <option value="España">España</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <input type="submit" value="Guardar">
+            </form>
+        </div>
+    </div>
+        <div class="aside-container">
+            <div class="google-search">
+                <h2>Buscador de Google</h2>
+                <form action="https://www.google.com/search" method="GET">
+                    <input type="text" name="q" placeholder="Buscar en Google">
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
+            <div class="youtube-video">
+                <h2>Video de YouTube</h2>
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/b-fksSYhj0c?si=7Nu02Cz2cI7LzlYP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>	
+	</section>
+	<footer>
+	    &copy; 2023 Una pobre realidad
+	</footer>
+</body>
+</html>
