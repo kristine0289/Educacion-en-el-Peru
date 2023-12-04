@@ -1,2 +1,2 @@
-# Pagina-inform-tica
+# Pagina informatica
 Educación en el Perú
